@@ -1,6 +1,3 @@
-// PlayerInteraction.cs
-using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerInteraction : MonoBehaviour
@@ -9,8 +6,20 @@ public class PlayerInteraction : MonoBehaviour
     public KeyCode interactKey = KeyCode.E;
     public Camera playerCamera;
 
+    void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            LockboxUI openBox = FindObjectOfType<LockboxUI>();
+            if (openBox != null) openBox.CloseUI();
+        }
+
         if (Input.GetKeyDown(interactKey))
             TryInteract();
     }
@@ -22,7 +31,6 @@ public class PlayerInteraction : MonoBehaviour
 
         if (Physics.Raycast(ray, out RaycastHit hit, interactRange))
         {
-            // Check for each interactable type
             if (hit.collider.TryGetComponent(out LockboxUI lockbox))
                 lockbox.OpenUI();
 
