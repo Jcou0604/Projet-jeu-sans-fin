@@ -1,12 +1,11 @@
-// DoorController.cs
 using UnityEngine;
 
 public class DoorController : MonoBehaviour
 {
-    public string requiredKeyID = "LockboxKey";
     public float openAngle = 90f;
     public float openSpeed = 2f;
 
+    private bool isUnlocked = false;
     private bool isOpen = false;
     private Quaternion closedRot;
     private Quaternion openRot;
@@ -14,7 +13,8 @@ public class DoorController : MonoBehaviour
     void Start()
     {
         closedRot = transform.rotation;
-        openRot = Quaternion.Euler(transform.eulerAngles + Vector3.up * openAngle);
+        openRot = Quaternion.Euler(
+            transform.eulerAngles + Vector3.up * openAngle);
     }
 
     void Update()
@@ -24,16 +24,16 @@ public class DoorController : MonoBehaviour
                 transform.rotation, openRot, Time.deltaTime * openSpeed);
     }
 
+    public void UnlockDoor()
+    {
+        isUnlocked = true;
+    }
+
     public void TryOpen()
     {
-        if (PlayerInventory.Instance.HasKey(requiredKeyID))
-        {
+        if (isUnlocked)
             isOpen = true;
-            Debug.Log("Door opened!");
-        }
         else
-        {
-            Debug.Log("You need a key!");
-        }
+            Debug.Log("The door is locked!");
     }
 }
