@@ -17,14 +17,12 @@ public class PlayerInteraction : MonoBehaviour
 
     void Update()
     {
-        // Close lockbox with Escape
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             LockboxUI openBox = FindObjectOfType<LockboxUI>();
             if (openBox != null) openBox.CloseUI();
         }
 
-        // Handle E key
         if (Input.GetKeyDown(interactKey))
         {
             LockboxUI openBox = FindObjectOfType<LockboxUI>();
@@ -34,19 +32,27 @@ public class PlayerInteraction : MonoBehaviour
                 TryInteract();
         }
 
-        // Handle Q key — drop the first item in inventory
         if (Input.GetKeyDown(dropKey))
         {
             var items = PlayerInventory.Instance.GetAllItems();
             foreach (var item in items)
             {
                 DropSystem.Instance.DropItem(item.Key);
-                break; // Drop only first item
+                break;
             }
         }
 
-        // Update the interaction prompt every frame
         UpdatePrompt();
+    }
+
+    // Called automatically by Unity when player walks into a trigger collider
+    void OnTriggerEnter(Collider other)
+    {
+        DoorController door = other.GetComponent<DoorController>();
+        if (door == null) door = other.GetComponentInParent<DoorController>();
+        if (door == null) door = other.GetComponentInChildren<DoorController>();
+        if (door != null)
+            door.TryOpen();
     }
 
     void UpdatePrompt()
@@ -56,18 +62,14 @@ public class PlayerInteraction : MonoBehaviour
 
         if (Physics.Raycast(ray, out RaycastHit hit, interactRange))
         {
-            Debug.Log("Raycast hit: " + hit.collider.gameObject.name);
-            // Looking at a key on the floor
             if (hit.collider.TryGetComponent(out KeyItem key)
                 && hit.collider.gameObject.activeSelf)
             {
-                InteractionPromptUI.Instance.Show(
-                    "[E] Pick up   [Q] Leave");
+                InteractionPromptUI.Instance.Show("[E] Pick up");
                 currentLookedAtItem = key;
                 return;
             }
 
-            // Looking at the lockbox
             if (hit.collider.TryGetComponent(out LockboxUI lockbox))
             {
                 InteractionPromptUI.Instance.Show("[E] Open lockbox");
@@ -75,7 +77,6 @@ public class PlayerInteraction : MonoBehaviour
                 return;
             }
 
-            // Looking at the keylock
             if (hit.collider.TryGetComponent(out Keylock keylock))
             {
                 InteractionPromptUI.Instance.Show("[E] Use key");
@@ -83,8 +84,10 @@ public class PlayerInteraction : MonoBehaviour
                 return;
             }
 
-            // Looking at the door
-            if (hit.collider.TryGetComponent(out DoorController door))
+            DoorController foundDoor = hit.collider.GetComponent<DoorController>();
+            if (foundDoor == null) foundDoor = hit.collider.GetComponentInParent<DoorController>();
+            if (foundDoor == null) foundDoor = hit.collider.GetComponentInChildren<DoorController>();
+            if (foundDoor != null)
             {
                 InteractionPromptUI.Instance.Show("[E] Open door");
                 currentLookedAtItem = null;
@@ -92,7 +95,6 @@ public class PlayerInteraction : MonoBehaviour
             }
         }
 
-        // Not looking at anything interactable
         InteractionPromptUI.Instance.Hide();
         currentLookedAtItem = null;
     }
@@ -113,8 +115,13 @@ public class PlayerInteraction : MonoBehaviour
             else if (hit.collider.TryGetComponent(out Keylock keylock))
                 keylock.TryUnlock();
 
-            else if (hit.collider.TryGetComponent(out DoorController door))
-                door.TryOpen();
+            else
+            {
+                DoorController door = hit.collider.GetComponent<DoorController>();
+                if (door == null) door = hit.collider.GetComponentInParent<DoorController>();
+                if (door == null) door = hit.collider.GetComponentInChildren<DoorController>();
+                if (door != null) door.TryOpen();
+            }
         }
     }
 }
