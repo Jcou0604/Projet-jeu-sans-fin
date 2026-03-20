@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using StarterAssets; // Required for disabling player input
+using UnityEngine.SceneManagement; // ← AJOUTE cette ligne en haut avec les autres using
 
 public class CountdownTimer : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class CountdownTimer : MonoBehaviour
 
     [Header("Player Reference")]
     public GameObject playerCapsule; // Drag PlayerCapsule here
+    public GameObject winPanel;      // ← AJOUTÉ ICI
+    public GameObject abandonPanel;  // ← AJOUTÉ ICI
 
     private float timeRemaining;
     private bool isGameOver = false;
@@ -95,27 +98,37 @@ public class CountdownTimer : MonoBehaviour
         Debug.Log("Game Over — Timer reached zero.");
     }
 
+    
     public void RestartGame()
     {
-        timeRemaining = totalTime;
-        isGameOver = false;
         Time.timeScale = 1f;
-
-        // Re-enable player movement
-        if (fpsController != null)
-            fpsController.enabled = true;
-
-        // Lock cursor again for FPS
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-
-        if (gameOverText != null)
-            gameOverText.gameObject.SetActive(false);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+    public void TriggerWin()
+    {
+        isGameOver = true;
+        Time.timeScale = 0f;
 
         if (timerText != null)
-        {
-            timerText.gameObject.SetActive(true);
-            timerText.color = Color.white; // Reset color
-        }
+            timerText.gameObject.SetActive(false);
+
+        if (winPanel != null)
+            winPanel.SetActive(true);
+
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
+        if (fpsController != null)
+            fpsController.enabled = false;
+    }
+
+    public void Abandonner()
+    {
+        if (winPanel != null)
+            winPanel.SetActive(false);
+
+        if (abandonPanel != null)
+            abandonPanel.SetActive(true);
     }
 }
+
