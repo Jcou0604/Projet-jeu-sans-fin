@@ -5,10 +5,9 @@ public class PlayerInventory : MonoBehaviour
 {
     public static PlayerInventory Instance;
 
-    // Stores item names with their display names
     private Dictionary<string, string> items = new Dictionary<string, string>();
+    private Dictionary<string, GameObject> itemPrefabs = new Dictionary<string, GameObject>();
 
-    // Event so the UI updates automatically
     public delegate void InventoryChanged();
     public event InventoryChanged OnInventoryChanged;
 
@@ -18,12 +17,13 @@ public class PlayerInventory : MonoBehaviour
         else Destroy(gameObject);
     }
 
-    public void AddItem(string itemID, string displayName)
+    public void AddItem(string itemID, string displayName, GameObject prefab = null)
     {
         if (!items.ContainsKey(itemID))
         {
             items[itemID] = displayName;
-            Debug.Log($"Picked up: {displayName}");
+            if (prefab != null)
+                itemPrefabs[itemID] = prefab;
             OnInventoryChanged?.Invoke();
         }
     }
@@ -33,6 +33,7 @@ public class PlayerInventory : MonoBehaviour
         if (items.ContainsKey(itemID))
         {
             items.Remove(itemID);
+            itemPrefabs.Remove(itemID);
             OnInventoryChanged?.Invoke();
         }
     }
@@ -40,4 +41,10 @@ public class PlayerInventory : MonoBehaviour
     public bool HasItem(string itemID) => items.ContainsKey(itemID);
 
     public Dictionary<string, string> GetAllItems() => items;
+
+    public GameObject GetPrefab(string itemID)
+    {
+        itemPrefabs.TryGetValue(itemID, out GameObject prefab);
+        return prefab;
+    }
 }

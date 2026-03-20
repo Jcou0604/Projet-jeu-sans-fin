@@ -20,7 +20,10 @@ public class LockboxUI : MonoBehaviour
     {
         lockboxPanel.SetActive(false);
     }
-
+    public bool IsUIOpen()
+    {
+        return lockboxPanel.activeSelf;
+    }
     public void OpenUI()
     {
         if (!isUnlocked)
