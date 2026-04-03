@@ -45,7 +45,6 @@ public class PlayerInteraction : MonoBehaviour
         UpdatePrompt();
     }
 
-    // Called automatically by Unity when player walks into a trigger collider
     void OnTriggerEnter(Collider other)
     {
         DoorController door = other.GetComponent<DoorController>();
@@ -62,6 +61,7 @@ public class PlayerInteraction : MonoBehaviour
 
         if (Physics.Raycast(ray, out RaycastHit hit, interactRange))
         {
+            // Looking at a key on the floor
             if (hit.collider.TryGetComponent(out KeyItem key)
                 && hit.collider.gameObject.activeSelf)
             {
@@ -70,13 +70,22 @@ public class PlayerInteraction : MonoBehaviour
                 return;
             }
 
+            // Looking at the lockbox — only show prompt if not yet unlocked
             if (hit.collider.TryGetComponent(out LockboxUI lockbox))
             {
-                InteractionPromptUI.Instance.Show("[E] Open lockbox");
+                if (!lockbox.IsUnlocked())
+                {
+                    InteractionPromptUI.Instance.Show("[E] Open chest");
+                    currentLookedAtItem = null;
+                    return;
+                }
+                // If unlocked, don't show any prompt for the chest
+                InteractionPromptUI.Instance.Hide();
                 currentLookedAtItem = null;
                 return;
             }
 
+            // Looking at the keylock
             if (hit.collider.TryGetComponent(out Keylock keylock))
             {
                 InteractionPromptUI.Instance.Show("[E] Use key");
@@ -84,6 +93,7 @@ public class PlayerInteraction : MonoBehaviour
                 return;
             }
 
+            // Looking at the door
             DoorController foundDoor = hit.collider.GetComponent<DoorController>();
             if (foundDoor == null) foundDoor = hit.collider.GetComponentInParent<DoorController>();
             if (foundDoor == null) foundDoor = hit.collider.GetComponentInChildren<DoorController>();

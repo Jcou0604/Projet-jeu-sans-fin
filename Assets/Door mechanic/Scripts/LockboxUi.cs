@@ -1,14 +1,16 @@
-// LockboxUI.cs
 using UnityEngine;
 using TMPro;
-using UnityEngine.UI;
 
 public class LockboxUI : MonoBehaviour
 {
     [Header("UI References")]
     public GameObject lockboxPanel;
     public TextMeshProUGUI displayText;
-    public GameObject keyObject; // The key inside the lockbox
+    public GameObject keyObject;
+
+    [Header("Chest")]
+    public Animation chestAnimation;
+    public string openAnimationName = "ChestAnim";
 
     [Header("Settings")]
     public string correctCode = "1234";
@@ -20,10 +22,17 @@ public class LockboxUI : MonoBehaviour
     {
         lockboxPanel.SetActive(false);
     }
+
     public bool IsUIOpen()
     {
         return lockboxPanel.activeSelf;
     }
+
+    public bool IsUnlocked()
+    {
+        return isUnlocked;
+    }
+
     public void OpenUI()
     {
         if (!isUnlocked)
@@ -43,14 +52,12 @@ public class LockboxUI : MonoBehaviour
         Cursor.visible = false;
     }
 
-    // Called by each number button (pass "1", "2", etc.)
     public void PressNumber(string number)
     {
         if (currentInput.Length < 4)
         {
             currentInput += number;
             UpdateDisplay();
-
             if (currentInput.Length == 4)
                 CheckCode();
         }
@@ -68,14 +75,24 @@ public class LockboxUI : MonoBehaviour
         {
             displayText.text = "OPEN!";
             isUnlocked = true;
-            keyObject.SetActive(true); // Reveal the key
-            Invoke(nameof(CloseUI), 1.5f);
+
+            if (chestAnimation != null)
+                chestAnimation.Play(openAnimationName);
+
+            Invoke(nameof(RevealKey), 1.2f);
+            Invoke(nameof(CloseUI), 2f);
         }
         else
         {
             displayText.text = "WRONG";
             Invoke(nameof(ResetAfterWrong), 1f);
         }
+    }
+
+    void RevealKey()
+    {
+        if (keyObject != null)
+            keyObject.SetActive(true);
     }
 
     void ResetAfterWrong()
@@ -86,7 +103,9 @@ public class LockboxUI : MonoBehaviour
 
     void UpdateDisplay()
     {
-        // Show asterisks for entered digits
-        displayText.text = currentInput.PadRight(4, '_');
+        string display = "";
+        for (int i = 0; i < 4; i++)
+            display += i < currentInput.Length ? currentInput[i] + " " : "_ ";
+        displayText.text = display.Trim();
     }
 }
