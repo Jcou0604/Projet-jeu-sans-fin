@@ -8,29 +8,35 @@ public class PlayerInteraction : MonoBehaviour
     public Camera playerCamera;
 
     private KeyItem currentLookedAtItem = null;
+    private LockboxUI lockboxUI;
 
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        lockboxUI = FindObjectOfType<LockboxUI>();
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        bool lockboxOpen = lockboxUI != null && lockboxUI.IsUIOpen();
+        bool journalOpen = JournalUI.Instance != null && JournalUI.Instance.IsOpen();
+
+        if (lockboxOpen || journalOpen)
         {
-            LockboxUI openBox = FindObjectOfType<LockboxUI>();
-            if (openBox != null) openBox.CloseUI();
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                if (lockboxOpen) lockboxUI.CloseUI();
+                if (journalOpen) JournalUI.Instance.CloseJournal();
+            }
+            return;
         }
 
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+
         if (Input.GetKeyDown(interactKey))
-        {
-            LockboxUI openBox = FindObjectOfType<LockboxUI>();
-            if (openBox != null && openBox.IsUIOpen())
-                openBox.CloseUI();
-            else
-                TryInteract();
-        }
+            TryInteract();
 
         if (Input.GetKeyDown(dropKey))
         {
@@ -50,42 +56,32 @@ public class PlayerInteraction : MonoBehaviour
         DoorController door = other.GetComponent<DoorController>();
         if (door == null) door = other.GetComponentInParent<DoorController>();
         if (door == null) door = other.GetComponentInChildren<DoorController>();
-        if (door != null)
-            door.TryOpen();
+        if (door != null) door.TryOpen();
     }
 
     void UpdatePrompt()
     {
-        Ray ray = new Ray(playerCamera.transform.position,
-                          playerCamera.transform.forward);
+        Ray ray = new Ray(playerCamera.transform.position, playerCamera.transform.forward);
 
         if (Physics.Raycast(ray, out RaycastHit hit, interactRange))
         {
-            // Looking at a key on the floor
-            if (hit.collider.TryGetComponent(out KeyItem key)
-                && hit.collider.gameObject.activeSelf)
+            if (hit.collider.TryGetComponent(out KeyItem key) && hit.collider.gameObject.activeSelf)
             {
                 InteractionPromptUI.Instance.Show("[E] Pick up");
                 currentLookedAtItem = key;
                 return;
             }
 
-            // Looking at the lockbox — only show prompt if not yet unlocked
             if (hit.collider.TryGetComponent(out LockboxUI lockbox))
             {
                 if (!lockbox.IsUnlocked())
-                {
                     InteractionPromptUI.Instance.Show("[E] Open chest");
-                    currentLookedAtItem = null;
-                    return;
-                }
-                // If unlocked, don't show any prompt for the chest
-                InteractionPromptUI.Instance.Hide();
+                else
+                    InteractionPromptUI.Instance.Hide();
                 currentLookedAtItem = null;
                 return;
             }
 
-            // Looking at the keylock
             if (hit.collider.TryGetComponent(out Keylock keylock))
             {
                 InteractionPromptUI.Instance.Show("[E] Use key");
@@ -93,7 +89,13 @@ public class PlayerInteraction : MonoBehaviour
                 return;
             }
 
-            // Looking at the door
+            if (hit.collider.TryGetComponent(out JournalInteract journal))
+            {
+                InteractionPromptUI.Instance.Show("[E] Read journal");
+                currentLookedAtItem = null;
+                return;
+            }
+
             DoorController foundDoor = hit.collider.GetComponent<DoorController>();
             if (foundDoor == null) foundDoor = hit.collider.GetComponentInParent<DoorController>();
             if (foundDoor == null) foundDoor = hit.collider.GetComponentInChildren<DoorController>();
@@ -111,20 +113,18 @@ public class PlayerInteraction : MonoBehaviour
 
     void TryInteract()
     {
-        Ray ray = new Ray(playerCamera.transform.position,
-                          playerCamera.transform.forward);
+        Ray ray = new Ray(playerCamera.transform.position, playerCamera.transform.forward);
 
         if (Physics.Raycast(ray, out RaycastHit hit, interactRange))
         {
             if (hit.collider.TryGetComponent(out LockboxUI lockbox))
                 lockbox.OpenUI();
-
             else if (hit.collider.TryGetComponent(out KeyItem key))
                 key.Pickup();
-
             else if (hit.collider.TryGetComponent(out Keylock keylock))
                 keylock.TryUnlock();
-
+            else if (hit.collider.TryGetComponent(out JournalInteract journal))
+                journal.Interact();
             else
             {
                 DoorController door = hit.collider.GetComponent<DoorController>();
