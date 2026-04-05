@@ -52,11 +52,19 @@ public class JournalUI : MonoBehaviour
         UpdatePage();
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+        StartCoroutine(HideHotbarNextFrame());
+    }
+
+    private System.Collections.IEnumerator HideHotbarNextFrame()
+    {
+        yield return null;
+        if (InventoryUI.Instance != null) InventoryUI.Instance.HideHotbar();
     }
 
     public void CloseJournal()
     {
         journalPanel.SetActive(false);
+        if (InventoryUI.Instance != null) InventoryUI.Instance.ShowHotbar();
     }
 
     public void NextPage()

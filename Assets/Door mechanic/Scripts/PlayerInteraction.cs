@@ -21,13 +21,18 @@ public class PlayerInteraction : MonoBehaviour
     {
         bool lockboxOpen = lockboxUI != null && lockboxUI.IsUIOpen();
         bool journalOpen = JournalUI.Instance != null && JournalUI.Instance.IsOpen();
+        bool inventoryOpen = InventoryUI.IsInventoryOpen();
 
-        if (lockboxOpen || journalOpen)
+        if (lockboxOpen || journalOpen || inventoryOpen)
         {
-            if (Input.GetKeyDown(KeyCode.Escape))
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+
+            if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Tab))
             {
                 if (lockboxOpen) lockboxUI.CloseUI();
                 if (journalOpen) JournalUI.Instance.CloseJournal();
+                if (inventoryOpen) InventoryUI.Instance.CloseInventory();
             }
             return;
         }
@@ -37,6 +42,9 @@ public class PlayerInteraction : MonoBehaviour
 
         if (Input.GetKeyDown(interactKey))
             TryInteract();
+
+        if (Input.GetKeyDown(KeyCode.Tab))
+            InventoryUI.Instance.OpenInventory();
 
         if (Input.GetKeyDown(dropKey))
         {
@@ -72,6 +80,13 @@ public class PlayerInteraction : MonoBehaviour
                 return;
             }
 
+            if (hit.collider.TryGetComponent(out JournalPickup journal) && hit.collider.gameObject.activeSelf)
+            {
+                InteractionPromptUI.Instance.Show("[E] Pick up journal");
+                currentLookedAtItem = null;
+                return;
+            }
+
             if (hit.collider.TryGetComponent(out LockboxUI lockbox))
             {
                 if (!lockbox.IsUnlocked())
@@ -89,7 +104,7 @@ public class PlayerInteraction : MonoBehaviour
                 return;
             }
 
-            if (hit.collider.TryGetComponent(out JournalInteract journal))
+            if (hit.collider.TryGetComponent(out JournalInteract journalInteract))
             {
                 InteractionPromptUI.Instance.Show("[E] Read journal");
                 currentLookedAtItem = null;
@@ -121,10 +136,12 @@ public class PlayerInteraction : MonoBehaviour
                 lockbox.OpenUI();
             else if (hit.collider.TryGetComponent(out KeyItem key))
                 key.Pickup();
+            else if (hit.collider.TryGetComponent(out JournalPickup journalPickup))
+                journalPickup.Pickup();
+            else if (hit.collider.TryGetComponent(out JournalInteract journalInteract))
+                journalInteract.Interact();
             else if (hit.collider.TryGetComponent(out Keylock keylock))
                 keylock.TryUnlock();
-            else if (hit.collider.TryGetComponent(out JournalInteract journal))
-                journal.Interact();
             else
             {
                 DoorController door = hit.collider.GetComponent<DoorController>();
