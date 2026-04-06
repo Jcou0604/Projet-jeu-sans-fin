@@ -3,7 +3,17 @@ guid: 3d5693628c000be4093e2747aa4532df
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SmallMilkCan.002
+    second: {fileID: 2100000, guid: 9622e630128235d4d9e5f01b91ce14a8, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Tin_df
+    second: {fileID: 2800000, guid: 92c089d77d9200c46bc4ebc10578a628, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
