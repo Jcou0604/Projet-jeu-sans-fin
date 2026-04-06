@@ -3,7 +3,27 @@ guid: 52f3be5401f94114ab4907b5c024d9f6
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: standardSurface1.001
+    second: {fileID: 2100000, guid: 6acdb1427c7e9a24ead63a55730957ea, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: oak_veneer_01_diff_1k
+    second: {fileID: 2800000, guid: 0bed29b85a31e074ca653400bf69d601, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: oak_veneer_01_nor_dx_1k
+    second: {fileID: 2800000, guid: 8348411106fa3674c99363934c2ff51b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: oak_veneer_01_rough_1k
+    second: {fileID: 2800000, guid: 1eb185ca9f094174e9e924ef8adfa75a, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
