@@ -1,0 +1,665 @@
+fileFormatVersion: 2
+guid: d3e7a6f1563c74f4da0a0ac5af7cec75
+ModelImporter:
+  serializedVersion: 24200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 19th-Century Paper Clutter Documents
+    second: {fileID: 2100000, guid: b807b1c90633ba2459047605c7209f09, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 19th-Century Paper Clutter Documents Rear
+    second: {fileID: 2100000, guid: 4e4a223589f4a3b42bf536022f858795, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 19th-Century Paper Clutter Receipts
+    second: {fileID: 2100000, guid: baa94abb1f03d634fbd0cc67eb51bee7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 19th-Century Paper Clutter Receipts Rear
+    second: {fileID: 2100000, guid: 135e53cf5d178e94e8c989933cd3a3a5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 19th-Century Paper Clutter Waste
+    second: {fileID: 2100000, guid: 65ba3bdce867ec64890dedce40dd24ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 19th-Century Paper Clutter Waste Rear
+    second: {fileID: 2100000, guid: 70b6de01816117a4c901d6e1a81a82a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 3DModel_Custom.002
+    second: {fileID: 2100000, guid: a1f0bd1ee965476439139c1dec7bdaea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buttermilk
+    second: {fileID: 2100000, guid: 09f21671763822e4c8ee06aedd893f13, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Clay.001
+    second: {fileID: 2100000, guid: 85e5ead05df6108439ca80fc32598a0e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Copper Ore
+    second: {fileID: 2100000, guid: a893535d2c2eacc48a9441bbe1372041, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Early 1900s Office Mail Envelope Stack
+    second: {fileID: 2100000, guid: d7914225883449643912d591874f2566, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Early 1900s Office Mail Opened
+    second: {fileID: 2100000, guid: 9a9e5fe2c067f08459f3d03e302eeffe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Jar.003
+    second: {fileID: 2100000, guid: 5fd7b1438ddd64c488f8f5cb4f11be6f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Jar.004
+    second: {fileID: 2100000, guid: 84278c36810de544b870fceab1cb97d6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Jar.005
+    second: {fileID: 2100000, guid: acaa497bafc8db44a97f1a4b53e631e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Label
+    second: {fileID: 2100000, guid: 64f94281477cff9439167396cc8f00f2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Large Stack of Old Office Documents
+    second: {fileID: 2100000, guid: 58cb8dbf25effd24c8b3a254a08d59c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: 86be55aff49d3a948a6877f5dbece9fa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: ee5271af171e8114f8d2282dad2170cc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.003
+    second: {fileID: 2100000, guid: f31e9343025738f4bbcd1ec3619fc672, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.004
+    second: {fileID: 2100000, guid: 4fbc33e54cdedcd49b927be55d19167d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.005
+    second: {fileID: 2100000, guid: 21c56bbc5e41c184997e381a52be6316, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.006
+    second: {fileID: 2100000, guid: 28f17aff1d65f584a858c60d4573dcdd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.007
+    second: {fileID: 2100000, guid: e701cd8ee2c19384ebfd6e71846574bd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.008
+    second: {fileID: 2100000, guid: f42ffae49a67193419ae2a4f9f7116f1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal
+    second: {fileID: 2100000, guid: 7cf12e73469af0542a952d31ec88b352, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Office Telegram Stack
+    second: {fileID: 2100000, guid: a4d052c3d9b8540458551f2b096d007e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Old_manhole_cover_u1_v1
+    second: {fileID: 2100000, guid: db2f3bcf05a15af45b57ff280dc51c86, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PX_Fruit_Plate_01_LOD0
+    second: {fileID: 2100000, guid: aac9d556c022f9545af749ea0e716029, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rough cloth
+    second: {fileID: 2100000, guid: 038980deb29ba18428a39e8d577ae6ac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Small Stack of Old Office Documents
+    second: {fileID: 2100000, guid: 43247975d29a83a408b09e3263328ad5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tidy Paperclipped Office Documents
+    second: {fileID: 2100000, guid: 1c755d9d56075df4087360f5c6b31ec3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Unusual Rustic Galleried Side Table
+    second: {fileID: 2100000, guid: 5571d064625e772478da54a5b273102c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Vase.001
+    second: {fileID: 2100000, guid: 669b30a483bca014b985aebee8a8116f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Vase.003
+    second: {fileID: 2100000, guid: 6c7d26d1515c13045a88dbb513dc0136, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Vase.004
+    second: {fileID: 2100000, guid: 07417afb2f8c820418ad7c51b4642a17, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wires
+    second: {fileID: 2100000, guid: b1e5ba40da2689f4497451fa444d1b8a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood
+    second: {fileID: 2100000, guid: 3aba41f9210378647953df7f27f3154e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hendel
+    second: {fileID: 2100000, guid: f95f0cca764de8e42be543c102914bd3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: material_0
+    second: {fileID: 2100000, guid: 4b2c820663fb8284383a5bb35af5735d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: scan texture
+    second: {fileID: 2100000, guid: 53f8d9e9294245b43be1a7e8d7336ff0, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 1800s Book Stand WoodA_AlbedoTransparency
+    second: {fileID: 2800000, guid: e730a244fb7f6114aa378aa85a4c3188, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 1800s Book Stand WoodA_Metallic
+    second: {fileID: 2800000, guid: abdce7f8bb1d60e479cee8e758444d60, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 1800s Book Stand WoodA_Normal
+    second: {fileID: 2800000, guid: 16726038845c32c428dae94c973a6de8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 1800s Book Stand WoodA_Roughness
+    second: {fileID: 2800000, guid: da0a83b562a2d7946bacc95390f8bbf6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 1900s Office Mail Envelope Stack_Color
+    second: {fileID: 2800000, guid: 8b7efc9b5d36d9142978ecc7bace7247, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 1900s Office Mail Envelope Stack_Metallic
+    second: {fileID: 2800000, guid: 039df7b8a09cd8c47aa6e1012e6f3691, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 1900s Office Mail Envelope Stack_Normal
+    second: {fileID: 2800000, guid: 95a265e7230eafa44866a14cb0bb2b05, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 1900s Office Mail Envelope Stack_Roughness
+    second: {fileID: 2800000, guid: f047fd04fffce5144b3de228e387bd1f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 3DModel_Custom_Basecolor
+    second: {fileID: 2800000, guid: dc4e666709769954d912aa65812f0bb8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 3DModel_Custom_Metallic
+    second: {fileID: 2800000, guid: 9901e53eadefc4d428828ea874a25fa5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 3DModel_Custom_Normal
+    second: {fileID: 2800000, guid: 58da0c69cd3331145adc9032a739ddd9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 3DModel_Custom_Roughness
+    second: {fileID: 2800000, guid: c68256d5e97e9a647a3895d99bc49025, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Bowl_NM
+    second: {fileID: 2800000, guid: 820d8e66f5e131948b6ccc3637dc6717, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Box_Diffuse
+    second: {fileID: 2800000, guid: 38815437be4035d4a82c5c8d01077c83, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ceramic Drip Ginger Jar
+    second: {fileID: 2800000, guid: 068aa060580cb7544a50a1f95113ba57, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ceramic_Metallic
+    second: {fileID: 2800000, guid: cbb04badd105d1d43be706a026434948, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ceramic_Roughness
+    second: {fileID: 2800000, guid: 46724d2dad361ad448147879fbd19913, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Cherry Blossom Lidded Ginger Jar
+    second: {fileID: 2800000, guid: 3afa6a716cbe434499e31e2bd6ad07ef, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Copper Ore_BaseColor
+    second: {fileID: 2800000, guid: cdcca3dce6d6e3845b721d320002f8ab, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Copper Ore_Metallic
+    second: {fileID: 2800000, guid: 70230afb433f196408be4020b8672c9c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Copper Ore_Normal
+    second: {fileID: 2800000, guid: 19ef2b20e94f6134e9684ec0726b2cab, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Copper Ore_Roughness
+    second: {fileID: 2800000, guid: 5954ea3124378b142a3868a0957446f4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Early 1900s Office Mail Opened_Color
+    second: {fileID: 2800000, guid: fd7937cfc9939144099bece87db3e973, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Early 1900s Office Mail Opened_Metallic
+    second: {fileID: 2800000, guid: 077b2c2290232d44fa4807eb6f27d0ba, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Early 1900s Office Mail Opened_Normal
+    second: {fileID: 2800000, guid: 17950097e4605a3478c63a7a691709d4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Early 1900s Office Mail Opened_Roughness
+    second: {fileID: 2800000, guid: 7e84c130dc42c5d419b6ed1ff56f5f6c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Fabric_folds_1_2_norm
+    second: {fileID: 2800000, guid: 4ed39b17b74a94c4787b7adcfac3f8a3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Jugb_dm
+    second: {fileID: 2800000, guid: fac47524d83b9b947a47009078ded11b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Jugb_nm
+    second: {fileID: 2800000, guid: c17aa2f9d4be43c4bac153e4b5f791c5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Marbleized Ceramic Vessel_Medium
+    second: {fileID: 2800000, guid: 9938def69292bd0448007fb40eb6894d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Office Documents_Metallic
+    second: {fileID: 2800000, guid: a6e6a7a64b1b4c840b60e8df689c0de9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Office Documents_Normal
+    second: {fileID: 2800000, guid: 7e957346c6c20e147a43793b725171ac, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Office Documents_Roughness
+    second: {fileID: 2800000, guid: 65995e5948ea2cb4c93e931b7ca5f25f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Office Telegram Stack_Color
+    second: {fileID: 2800000, guid: de7e8c936901bfe43ac4a1e2cc1b6d09, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Office Telegram Stack_Metallic
+    second: {fileID: 2800000, guid: 5e93d84c4e1afdb478b063ee54f9d96d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Office Telegram Stack_Normal
+    second: {fileID: 2800000, guid: d91ee32b6c57880409dd0e052c0dd7a8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Office Telegram Stack_Roughness
+    second: {fileID: 2800000, guid: f588ee0fa8a728247927e6298e759b67, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Old Office Documents Type A Standard REAR_AlbedoTransparency
+    second: {fileID: 2800000, guid: 6aed480703dc78044b40752acf865b25, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Old Office Documents Type A Standard_AlbedoTransparency
+    second: {fileID: 2800000, guid: fa0d0cbf9024be44b9b275486b4bf1c2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Old Office Documents Type A Standard_Metallic
+    second: {fileID: 2800000, guid: 897966d8ea19f0d4a950daeb8c92d553, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Old Office Documents Type A Standard_Normal
+    second: {fileID: 2800000, guid: b20d552aa0c94a147a8322672489a6cc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Old Office Documents Type A Standard_Roughness
+    second: {fileID: 2800000, guid: 74ccc5f80760f814489fe5d37fb81fd5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Old_manhole_cover_u1_v1_diffuse
+    second: {fileID: 2800000, guid: 931869fa356a880498c00317cff8f48f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Old_manhole_cover_u1_v1_normal
+    second: {fileID: 2800000, guid: 8ccf4767d3ce6924cb626c541d43464c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PX_Fruit_Plate_01_albedo
+    second: {fileID: 2800000, guid: 4006b158444fae440a962f9863054a0a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PX_Fruit_Plate_01_normal_LOD0
+    second: {fileID: 2800000, guid: cc3e2cc7953bd79499db8a9cb5916a0e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PX_Fruit_Plate_01_roughness
+    second: {fileID: 2800000, guid: cdfca9f5d310b08478cdc9706b1b97f6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Petite Ginger Jar
+    second: {fileID: 2800000, guid: d46ea86173888ea4a9cfad01ab16cb65, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Porcelain Lidded Temple Jar
+    second: {fileID: 2800000, guid: 74fb723d1edf5ae499e4eb63b31bee0e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Porcelaine Bud Vase_rose Motif
+    second: {fileID: 2800000, guid: 77c9785146853bf4eb83c56f9c26acb5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Pump_nm
+    second: {fileID: 2800000, guid: 5260193a525112341be0a76b7d8d5c61, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Rock029_4K_Color
+    second: {fileID: 2800000, guid: 2c8111fca08fcd041b04fdbd401b2ac9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Rock029_4K_Roughness
+    second: {fileID: 2800000, guid: 609f2e5dde8229748b2c2fdc151eea28, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: RyeBread_nm
+    second: {fileID: 2800000, guid: 160cf668b2915054d8e1b0fa138eb44d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Stick_Dif
+    second: {fileID: 2800000, guid: 189ac5bf61bbb9b42bcadd9800919fe2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Stick_NM
+    second: {fileID: 2800000, guid: 9748eafb9b06797449b022ff0db27fb8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Tidy Paperclipped Office Documents_AlbedoTransparency
+    second: {fileID: 2800000, guid: 4c6407d04ac1f444bbfc94e266c5346d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Tidy Paperclipped Office Documents_Metallic
+    second: {fileID: 2800000, guid: 844f4bf1a85d253429ae8d0d2a8f1198, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Tidy Paperclipped Office Documents_Normal
+    second: {fileID: 2800000, guid: 4253aa239ffd1c140a4dc3da0cd160b2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Tidy Paperclipped Office Documents_Roughness
+    second: {fileID: 2800000, guid: 3cb2e4a299ae1354ab02aa1a50fec2a9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: clay2_Alpha
+    second: {fileID: 2800000, guid: efbf4537d335dff49b272dec57344f9f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: clay2_Emissive
+    second: {fileID: 2800000, guid: 89d04ee45e6c0cf42b0406a8eea9905c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: clay2_Metallic
+    second: {fileID: 2800000, guid: 707014785daeba843b560150588b8b71, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: clay2_Normal
+    second: {fileID: 2800000, guid: c5825ed08f59f264faf941448be98e14, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: clay2_Roughness
+    second: {fileID: 2800000, guid: 724ea099c06a8dd4f9c9661ae92c1163, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: fabric_basecolor
+    second: {fileID: 2800000, guid: 5e9a89ebc3c17d741b4c76d33ac10841, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: fabric_normal
+    second: {fileID: 2800000, guid: 13a2e8263f609104da9025973c2a7a7d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: fabric_roughness
+    second: {fileID: 2800000, guid: 2aced85ce54686e45805e11fd538221d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: poker_basecolor
+    second: {fileID: 2800000, guid: 7cbff7cb0310e1945a4be5686f1ebbee, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: poker_normal
+    second: {fileID: 2800000, guid: 46ef4eb03238d6e438e216b77d6cc362, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    generateMeshLods: 0
+    meshLodGenerationFlags: 0
+    maximumMeshLod: -1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
