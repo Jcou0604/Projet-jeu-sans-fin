@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: d3e7a6f1563c74f4da0a0ac5af7cec75
 ModelImporter:
   serializedVersion: 24200
@@ -559,6 +560,13 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: poker_normal
     second: {fileID: 2800000, guid: 46ef4eb03238d6e438e216b77d6cc362, type: 3}
+=======
+guid: 52f543248b6b3c743b3c9886543572c7
+ModelImporter:
+  serializedVersion: 24200
+  internalIDToNameTable: []
+  externalObjects: {}
+>>>>>>> 6962d9477456b2a8553ff580ec19dc73d039daba
   materials:
     materialImportMode: 2
     materialName: 0
