@@ -1,13 +1,18 @@
 fileFormatVersion: 2
-guid: db5ee4c203389415fb60114fa52c6c22
+guid: 51b11342d648be24e967a41b97992dd8
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Large Stack of Old Office Documents
+    second: {fileID: 2100000, guid: 04625ce4d60deea44820c0c7de173fb9, type: 2}
   materials:
     materialImportMode: 2
-    materialName: 0
-    materialSearch: 1
+    materialName: 1
+    materialSearch: 2
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4

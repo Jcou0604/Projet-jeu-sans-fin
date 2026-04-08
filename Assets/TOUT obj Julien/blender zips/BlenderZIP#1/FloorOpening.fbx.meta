@@ -1,13 +1,18 @@
 fileFormatVersion: 2
-guid: cb43102d817d0469c837d98d0df9edbe
+guid: 9874c9ff1ffab634dbff023c57a69006
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Old_manhole_cover_u1_v1
+    second: {fileID: 2100000, guid: bf8b2cfcbdb68b94ebf69c1ed43e2d05, type: 2}
   materials:
     materialImportMode: 2
-    materialName: 0
-    materialSearch: 1
+    materialName: 1
+    materialSearch: 2
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4

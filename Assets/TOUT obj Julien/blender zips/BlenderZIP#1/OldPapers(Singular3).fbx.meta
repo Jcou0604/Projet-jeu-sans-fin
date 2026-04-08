@@ -1,13 +1,18 @@
 fileFormatVersion: 2
-guid: ed1e7933b61984126bfdf70c5fe8b1a5
+guid: 2f9d90d91d9528a44aaab0efd8b97a6e
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Office Telegram Stack
+    second: {fileID: 2100000, guid: f660a7463f0ace843b16ead2069f3df9, type: 2}
   materials:
     materialImportMode: 2
-    materialName: 0
-    materialSearch: 1
+    materialName: 1
+    materialSearch: 2
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4

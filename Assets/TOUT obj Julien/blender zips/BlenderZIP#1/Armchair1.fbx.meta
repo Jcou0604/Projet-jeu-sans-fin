@@ -1,13 +1,43 @@
 fileFormatVersion: 2
-guid: b3e2c94711c824a2499c35f7144da4ee
+guid: fa4ada7233398ab458a4eab8edf59d02
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tissus Velvet marron.001
+    second: {fileID: 2100000, guid: 1cd792dedeed7764d94752e8e9570dae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "Velour cotel\xE9 taupe.001"
+    second: {fileID: 2100000, guid: 2c19097a21514e04fba2c95b574b7a89, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Velour taupe.001
+    second: {fileID: 2100000, guid: b618ea52fc1be0f4dbb6b2db3350dd9c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: black wood.001
+    second: {fileID: 2100000, guid: 7320303cafd2e8a4593aa2d80f4655c2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "cuir marron avec bords abim\xE9s.001"
+    second: {fileID: 2100000, guid: 07d926cc9a26126469e8ba69def59830, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tissus indien.001
+    second: {fileID: 2100000, guid: 9d7b242a76690384c90220d9ba700c04, type: 2}
   materials:
     materialImportMode: 2
-    materialName: 0
-    materialSearch: 1
+    materialName: 1
+    materialSearch: 2
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4

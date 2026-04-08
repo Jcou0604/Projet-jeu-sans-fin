@@ -1,13 +1,18 @@
 fileFormatVersion: 2
-guid: 7deee98d9e4a542d3a5c3ef1aef90e56
+guid: 261db2bf0afc43f47871254140e297c2
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material-silver-1
+    second: {fileID: 2100000, guid: 82239e91be58c39448564c27888ec134, type: 2}
   materials:
     materialImportMode: 2
-    materialName: 0
-    materialSearch: 1
+    materialName: 1
+    materialSearch: 2
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4

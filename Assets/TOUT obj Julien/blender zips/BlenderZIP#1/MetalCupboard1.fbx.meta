@@ -1,13 +1,18 @@
 fileFormatVersion: 2
-guid: beda36210f5ee4d8891148414ab40cee
+guid: ce57fad97e6538b43aa2e426903b486b
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PX_Old_Tin_Cabinet_01_LOD0
+    second: {fileID: 2100000, guid: 9df1bdb2bfb0f954d97ff02d922672b6, type: 2}
   materials:
     materialImportMode: 2
-    materialName: 0
-    materialSearch: 1
+    materialName: 1
+    materialSearch: 2
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4

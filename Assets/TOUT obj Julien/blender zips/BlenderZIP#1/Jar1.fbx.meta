@@ -1,13 +1,33 @@
 fileFormatVersion: 2
-guid: b675f46c701594ff0a7af7b311e61c08
+guid: 5286fdcf47cf45b44af8b853327c557c
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Clay.001
+    second: {fileID: 2100000, guid: 234f17efcbfa87849813b8e22c4dd3c7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Copper Ore
+    second: {fileID: 2100000, guid: 4d1fd4f95827ad6488a2648eeb80951a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Label
+    second: {fileID: 2100000, guid: 3972f134da0ded14da3bb47ba609b44b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rough cloth
+    second: {fileID: 2100000, guid: f5afa3250a8421f49b19a3259f12f3e5, type: 2}
   materials:
     materialImportMode: 2
-    materialName: 0
-    materialSearch: 1
+    materialName: 1
+    materialSearch: 2
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4

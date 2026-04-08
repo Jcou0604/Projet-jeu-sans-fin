@@ -1,13 +1,23 @@
 fileFormatVersion: 2
-guid: d5fe8cd073cbc461c8f37738bc995eea
+guid: 348fa619154ae774da20ebdab8ff7404
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Broken Wall Pieces
+    second: {fileID: 2100000, guid: f87f0a839dcbb6b4d9c4804f53496ef2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Broken Wall Wall
+    second: {fileID: 2100000, guid: 8d70ac1e734cc23449b52a7a2321fde0, type: 2}
   materials:
     materialImportMode: 2
-    materialName: 0
-    materialSearch: 1
+    materialName: 1
+    materialSearch: 2
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4

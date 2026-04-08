@@ -1,13 +1,23 @@
 fileFormatVersion: 2
-guid: c1f35cfbe0e674d3db0dac4e524ca2db
+guid: 2a638d8cc0ae1d640a1dc7514ba7e035
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 19th-Century Paper Clutter Documents
+    second: {fileID: 2100000, guid: 98bcd847d075063438dd04dd4f997376, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 19th-Century Paper Clutter Documents Rear
+    second: {fileID: 2100000, guid: 5b31024ae0d4a6341b63c2f22df87d34, type: 2}
   materials:
     materialImportMode: 2
-    materialName: 0
-    materialSearch: 1
+    materialName: 1
+    materialSearch: 2
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4

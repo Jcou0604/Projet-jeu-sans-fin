@@ -1,13 +1,18 @@
 fileFormatVersion: 2
-guid: e64339b04b5f14351ac508d4e83c0bef
+guid: 423bf56de912bed4996074b4d1e15c8d
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PX_Car_Body_Repair_Paste_01_LOD0
+    second: {fileID: 2100000, guid: afd4b32a8fb47d14a8ab427f6852cde0, type: 2}
   materials:
     materialImportMode: 2
-    materialName: 0
-    materialSearch: 1
+    materialName: 1
+    materialSearch: 2
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4

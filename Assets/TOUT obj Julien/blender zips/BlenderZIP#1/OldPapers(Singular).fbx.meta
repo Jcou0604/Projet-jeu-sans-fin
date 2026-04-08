@@ -1,13 +1,18 @@
 fileFormatVersion: 2
-guid: 20efdbff3569e403fb12b85685b89b66
+guid: 455d5b3c0b78b1248b1ecc56d76d86da
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tidy Paperclipped Office Documents
+    second: {fileID: 2100000, guid: 702d4e9452e30ad4890716d2e26c6b20, type: 2}
   materials:
     materialImportMode: 2
-    materialName: 0
-    materialSearch: 1
+    materialName: 1
+    materialSearch: 2
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4

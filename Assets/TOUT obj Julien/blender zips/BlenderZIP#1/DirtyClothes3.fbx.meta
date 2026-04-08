@@ -1,13 +1,18 @@
 fileFormatVersion: 2
-guid: 085d78c81154f4830b10a91fd20f3b0d
+guid: 206439ef26f4cf544a29e87a58bd22c4
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: scan texture
+    second: {fileID: 2100000, guid: d1a174cb68c7a904eadddc96aec54954, type: 2}
   materials:
     materialImportMode: 2
-    materialName: 0
-    materialSearch: 1
+    materialName: 1
+    materialSearch: 2
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
