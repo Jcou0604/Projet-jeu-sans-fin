@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 217ba303d11ab40e68971c9bcbb9711c
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 196525
+  packageName: Starter Assets - FirstPerson | Updates in new CharacterController
+    package
+  packageVersion: 1.3.1
+  assetPath: Assets/StarterAssets/Environment/Prefabs/Environment_Prefab.prefab
+  uploadId: 880468
