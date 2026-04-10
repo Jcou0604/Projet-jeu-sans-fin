@@ -6034,6 +6034,38 @@ PrefabInstance:
       propertyPath: m_Name
       value: InventoryCanvas (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5338768854645762119, guid: 16cc7318947b7094fb45be5f04e9e0ca, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1505648999}
+    - target: {fileID: 5338768854645762119, guid: 16cc7318947b7094fb45be5f04e9e0ca, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: NextPage
+      objectReference: {fileID: 0}
+    - target: {fileID: 6450770028837598641, guid: 16cc7318947b7094fb45be5f04e9e0ca, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6450770028837598641, guid: 16cc7318947b7094fb45be5f04e9e0ca, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6450770028837598641, guid: 16cc7318947b7094fb45be5f04e9e0ca, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1505648999}
+    - target: {fileID: 6450770028837598641, guid: 16cc7318947b7094fb45be5f04e9e0ca, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6450770028837598641, guid: 16cc7318947b7094fb45be5f04e9e0ca, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PrevPage
+      objectReference: {fileID: 0}
+    - target: {fileID: 6450770028837598641, guid: 16cc7318947b7094fb45be5f04e9e0ca, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: JournalUI, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 8345855404343395672, guid: 16cc7318947b7094fb45be5f04e9e0ca, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -7820,7 +7852,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7883484526184543033, guid: 7462dee1e02ce6e44a259469ee0f9e6d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.5
+      value: -6.8
       objectReference: {fileID: 0}
     - target: {fileID: 7883484526184543033, guid: 7462dee1e02ce6e44a259469ee0f9e6d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -15868,6 +15900,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1490556023}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1505648999 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3229775831709653383, guid: 650fd1f6ba3203b4fbddb8cf9a3df563, type: 3}
+  m_PrefabInstance: {fileID: 213403815}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2aa358e90fa4ec047bbc5359d9beabc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::JournalUI
 --- !u!4 &1511670205 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 7a7ad6d1e2bc27744864e7d6ac2c7c65, type: 3}
