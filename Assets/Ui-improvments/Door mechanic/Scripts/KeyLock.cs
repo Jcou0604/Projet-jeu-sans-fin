@@ -8,26 +8,18 @@ public class Keylock : MonoBehaviour
 
     public void TryUnlock()
     {
-        Debug.Log("TryUnlock called!");
-
-        if (isUnlocked)
-        {
-            Debug.Log("Already unlocked!");
-            return;
-        }
+        if (isUnlocked) return;
 
         if (PlayerInventory.Instance.HasItem(requiredKeyID))
         {
-            Debug.Log("Has key, unlocking door!");
             isUnlocked = true;
             PlayerInventory.Instance.RemoveItem(requiredKeyID);
             linkedDoor.UnlockDoor();
+            linkedDoor.TryOpen();
         }
         else
         {
-            Debug.Log("Key not found! Looking for: " + requiredKeyID);
-            Debug.Log("Items in inventory: " +
-                string.Join(", ", PlayerInventory.Instance.GetAllItems().Keys));
+            Debug.Log("Clé introuvable. Cherche: " + requiredKeyID);
         }
     }
 }

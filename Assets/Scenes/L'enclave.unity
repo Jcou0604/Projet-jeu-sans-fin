@@ -6066,6 +6066,34 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: JournalUI, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 8102177033111064087, guid: 16cc7318947b7094fb45be5f04e9e0ca, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8102177033111064087, guid: 16cc7318947b7094fb45be5f04e9e0ca, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8102177033111064087, guid: 16cc7318947b7094fb45be5f04e9e0ca, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8102177033111064087, guid: 16cc7318947b7094fb45be5f04e9e0ca, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 272
+      objectReference: {fileID: 0}
+    - target: {fileID: 8102177033111064087, guid: 16cc7318947b7094fb45be5f04e9e0ca, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 86
+      objectReference: {fileID: 0}
+    - target: {fileID: 8102177033111064087, guid: 16cc7318947b7094fb45be5f04e9e0ca, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8102177033111064087, guid: 16cc7318947b7094fb45be5f04e9e0ca, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -59
+      objectReference: {fileID: 0}
     - target: {fileID: 8345855404343395672, guid: 16cc7318947b7094fb45be5f04e9e0ca, type: 3}
       propertyPath: m_Pivot.x
       value: 0
