@@ -8727,6 +8727,32 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 662158493}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &667053132 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 232148001778653919, guid: f3af250f353ba5f469216f9abb4b72f7, type: 3}
+  m_PrefabInstance: {fileID: 961395324}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &667053136
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667053132}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.3973565, y: 0.3648172, z: 0.6426053}
+  m_Center: {x: -0.0009263684, y: -0.05521598, z: 0.32130247}
 --- !u!1001 &680705402
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9316,6 +9342,7 @@ GameObject:
   - component: {fileID: 701203966}
   - component: {fileID: 701203965}
   - component: {fileID: 701203964}
+  - component: {fileID: 701203968}
   m_Layer: 0
   m_Name: salle a manger
   m_TagString: Untagged
@@ -9421,6 +9448,27 @@ Transform:
   - {fileID: 705270133}
   m_Father: {fileID: 633748035}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &701203968
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701203963}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10, y: 2.220446e-16, z: 10.000001}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &703007485
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10028,6 +10076,32 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1379586977}
   m_SourcePrefab: {fileID: 100100000, guid: 7462dee1e02ce6e44a259469ee0f9e6d, type: 3}
+--- !u!1 &737693893 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 232148001778653919, guid: f3af250f353ba5f469216f9abb4b72f7, type: 3}
+  m_PrefabInstance: {fileID: 884754793}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &737693897
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737693893}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.3973564, y: 0.36481696, z: 0.642605}
+  m_Center: {x: -0.0009282754, y: -0.0552159, z: 0.32130232}
 --- !u!1001 &738530219
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11488,6 +11562,7 @@ GameObject:
   - component: {fileID: 830436681}
   - component: {fileID: 830436680}
   - component: {fileID: 830436679}
+  - component: {fileID: 830436682}
   m_Layer: 0
   m_Name: chambre rdc
   m_TagString: Untagged
@@ -11596,6 +11671,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 830436677}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &830436682
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 830436677}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.000005, y: 2.220446e-16, z: 10.000004}
+  m_Center: {x: 0.0000009536743, y: 0, z: 0}
 --- !u!1 &838492099
 GameObject:
   m_ObjectHideFlags: 0
@@ -12270,7 +12366,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 232148001778653919, guid: f3af250f353ba5f469216f9abb4b72f7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 737693897}
   m_SourcePrefab: {fileID: 100100000, guid: f3af250f353ba5f469216f9abb4b72f7, type: 3}
 --- !u!4 &884754794 stripped
 Transform:
@@ -13336,7 +13435,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 232148001778653919, guid: f3af250f353ba5f469216f9abb4b72f7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 667053136}
   m_SourcePrefab: {fileID: 100100000, guid: f3af250f353ba5f469216f9abb4b72f7, type: 3}
 --- !u!4 &961395325 stripped
 Transform:
@@ -17431,6 +17533,7 @@ GameObject:
   - component: {fileID: 1323618621}
   - component: {fileID: 1323618620}
   - component: {fileID: 1323618619}
+  - component: {fileID: 1323618623}
   m_Layer: 0
   m_Name: double chambre
   m_TagString: Untagged
@@ -17546,6 +17649,27 @@ Transform:
   - {fileID: 565964897}
   m_Father: {fileID: 633748035}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1323618623
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323618618}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Size: {x: 10, y: 2.220446e-16, z: 10}
+  m_Center: {x: -0.0000019073486, y: 0, z: 0}
 --- !u!1 &1329521097
 GameObject:
   m_ObjectHideFlags: 0
@@ -23952,6 +24076,7 @@ GameObject:
   - component: {fileID: 1839845775}
   - component: {fileID: 1839845774}
   - component: {fileID: 1839845773}
+  - component: {fileID: 1839845776}
   m_Layer: 0
   m_Name: toilette
   m_TagString: Untagged
@@ -24057,6 +24182,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1839845771}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &1839845776
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839845771}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10, y: 2.220446e-16, z: 9.999999}
+  m_Center: {x: 0.0000038146973, y: 0, z: 0}
 --- !u!1 &1842535168
 GameObject:
   m_ObjectHideFlags: 0
