@@ -22,17 +22,20 @@ public class PlayerInteraction : MonoBehaviour
         bool lockboxOpen = lockboxUI != null && lockboxUI.IsUIOpen();
         bool journalOpen = JournalUI.Instance != null && JournalUI.Instance.IsOpen();
         bool inventoryOpen = InventoryUI.IsInventoryOpen();
+        bool tvOpen = TVObjectiveUI.Instance != null && TVObjectiveUI.Instance.IsOpen();
 
-        if (lockboxOpen || journalOpen || inventoryOpen)
+        if (lockboxOpen || journalOpen || inventoryOpen || tvOpen)
         {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+            InteractionPromptUI.Instance.Hide();
 
             if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Tab))
             {
                 if (lockboxOpen) lockboxUI.CloseUI();
                 if (journalOpen) JournalUI.Instance.CloseJournal();
                 if (inventoryOpen) InventoryUI.Instance.CloseInventory();
+                if (tvOpen) TVObjectiveUI.Instance.ClosePanel();
             }
             return;
         }
@@ -75,14 +78,14 @@ public class PlayerInteraction : MonoBehaviour
         {
             if (hit.collider.TryGetComponent(out KeyItem key) && hit.collider.gameObject.activeSelf)
             {
-                InteractionPromptUI.Instance.Show("[E] Pick up");
+                InteractionPromptUI.Instance.Show("[E] Ramasser");
                 currentLookedAtItem = key;
                 return;
             }
 
             if (hit.collider.TryGetComponent(out JournalPickup journal) && hit.collider.gameObject.activeSelf)
             {
-                InteractionPromptUI.Instance.Show("[E] Pick up journal");
+                InteractionPromptUI.Instance.Show("[E] Ramasser le journal");
                 currentLookedAtItem = null;
                 return;
             }
@@ -90,7 +93,7 @@ public class PlayerInteraction : MonoBehaviour
             if (hit.collider.TryGetComponent(out LockboxUI lockbox))
             {
                 if (!lockbox.IsUnlocked())
-                    InteractionPromptUI.Instance.Show("[E] Open chest");
+                    InteractionPromptUI.Instance.Show("[E] Ouvrir le coffre");
                 else
                     InteractionPromptUI.Instance.Hide();
                 currentLookedAtItem = null;
@@ -99,14 +102,21 @@ public class PlayerInteraction : MonoBehaviour
 
             if (hit.collider.TryGetComponent(out Keylock keylock))
             {
-                InteractionPromptUI.Instance.Show("[E] Use key");
+                InteractionPromptUI.Instance.Show("[E] Utiliser la clé");
                 currentLookedAtItem = null;
                 return;
             }
 
             if (hit.collider.TryGetComponent(out JournalInteract journalInteract))
             {
-                InteractionPromptUI.Instance.Show("[E] Read journal");
+                InteractionPromptUI.Instance.Show("[E] Lire le journal");
+                currentLookedAtItem = null;
+                return;
+            }
+
+            if (hit.collider.TryGetComponent(out TVInteract tv))
+            {
+                InteractionPromptUI.Instance.Show("[E] Regarder la télévision");
                 currentLookedAtItem = null;
                 return;
             }
@@ -116,7 +126,7 @@ public class PlayerInteraction : MonoBehaviour
             if (foundDoor == null) foundDoor = hit.collider.GetComponentInChildren<DoorController>();
             if (foundDoor != null)
             {
-                InteractionPromptUI.Instance.Show("[E] Open door");
+                InteractionPromptUI.Instance.Show("[E] Ouvrir la porte");
                 currentLookedAtItem = null;
                 return;
             }
@@ -140,6 +150,8 @@ public class PlayerInteraction : MonoBehaviour
                 journalPickup.Pickup();
             else if (hit.collider.TryGetComponent(out JournalInteract journalInteract))
                 journalInteract.Interact();
+            else if (hit.collider.TryGetComponent(out TVInteract tv))
+                tv.Interact();
             else if (hit.collider.TryGetComponent(out Keylock keylock))
                 keylock.TryUnlock();
             else
