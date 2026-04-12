@@ -7938,6 +7938,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6540575356308940528, guid: 7462dee1e02ce6e44a259469ee0f9e6d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1788800961}
+    - targetCorrespondingSourceObject: {fileID: 6540575356308940528, guid: 7462dee1e02ce6e44a259469ee0f9e6d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1788800962}
     - targetCorrespondingSourceObject: {fileID: 8876503290412365384, guid: 7462dee1e02ce6e44a259469ee0f9e6d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1379586977}
@@ -18960,11 +18963,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aad97dbf2df764c64998ae30a23c2467, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MouseLook
-  sensitivityX: 6
-  sensitivityY: 6
+  sensitivityX: 5
+  sensitivityY: 1
   minPitch: -90
   maxPitch: 90
   playerBody: {fileID: 1257286673}
+--- !u!114 &1788800962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1788800955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0581871555fc4ccda498dc041d4a30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Crosshair
+  color: {r: 0.6745098, g: 0, b: 0, a: 1}
+  size: 12
+  thickness: 6
+  gap: 6
 --- !u!1 &1820720266
 GameObject:
   m_ObjectHideFlags: 0
