@@ -8232,6 +8232,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NestedParent_Unpack (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5175509116771677139, guid: 7462dee1e02ce6e44a259469ee0f9e6d, type: 3}
+      propertyPath: RotationSpeed
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 6540575356308940533, guid: 7462dee1e02ce6e44a259469ee0f9e6d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -20.929996
@@ -8317,9 +8321,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6540575356308940528, guid: 7462dee1e02ce6e44a259469ee0f9e6d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1788800961}
     - targetCorrespondingSourceObject: {fileID: 6540575356308940528, guid: 7462dee1e02ce6e44a259469ee0f9e6d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1788800962}
@@ -13586,11 +13587,6 @@ Transform:
   - {fileID: 2109087591}
   m_Father: {fileID: 633748035}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1257286673 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7883484526184543033, guid: 7462dee1e02ce6e44a259469ee0f9e6d, type: 3}
-  m_PrefabInstance: {fileID: 737430701}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1262102048
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19871,23 +19867,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6540575356308940528, guid: 7462dee1e02ce6e44a259469ee0f9e6d, type: 3}
   m_PrefabInstance: {fileID: 737430701}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1788800961
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1788800955}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aad97dbf2df764c64998ae30a23c2467, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MouseLook
-  sensitivityX: 5
-  sensitivityY: 1
-  minPitch: -90
-  maxPitch: 90
-  playerBody: {fileID: 1257286673}
 --- !u!114 &1788800962
 MonoBehaviour:
   m_ObjectHideFlags: 0
