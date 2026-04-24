@@ -19598,10 +19598,18 @@ PrefabInstance:
       propertyPath: m_Size.z
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1647686258186438947, guid: c6b337a0baf4e93498ddd31651fd2f4a, type: 3}
+      propertyPath: appearDelay
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3604982033010314485, guid: c6b337a0baf4e93498ddd31651fd2f4a, type: 3}
       propertyPath: chestAnimation
       value: 
       objectReference: {fileID: 76537171}
+    - target: {fileID: 6803434529969629735, guid: c6b337a0baf4e93498ddd31651fd2f4a, type: 3}
+      propertyPath: m_text
+      value: _ _ _ _
+      objectReference: {fileID: 0}
     - target: {fileID: 7937716675378465658, guid: c6b337a0baf4e93498ddd31651fd2f4a, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -19655,7 +19663,18 @@ PrefabInstance:
       value: "box_cl\xE9 2e"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3939423052239203928, guid: c6b337a0baf4e93498ddd31651fd2f4a, type: 3}
+    - {fileID: 6459361244121759727, guid: c6b337a0baf4e93498ddd31651fd2f4a, type: 3}
+    - {fileID: 4987305145260384023, guid: c6b337a0baf4e93498ddd31651fd2f4a, type: 3}
+    - {fileID: 3520458904234804617, guid: c6b337a0baf4e93498ddd31651fd2f4a, type: 3}
+    - {fileID: 5844837916237947859, guid: c6b337a0baf4e93498ddd31651fd2f4a, type: 3}
+    - {fileID: 5487517645887274450, guid: c6b337a0baf4e93498ddd31651fd2f4a, type: 3}
+    - {fileID: 7225982561655552794, guid: c6b337a0baf4e93498ddd31651fd2f4a, type: 3}
+    - {fileID: 3357229810354325884, guid: c6b337a0baf4e93498ddd31651fd2f4a, type: 3}
+    - {fileID: 2954225955517545845, guid: c6b337a0baf4e93498ddd31651fd2f4a, type: 3}
+    - {fileID: 7642142631934574747, guid: c6b337a0baf4e93498ddd31651fd2f4a, type: 3}
+    - {fileID: 588955249884704097, guid: c6b337a0baf4e93498ddd31651fd2f4a, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 7937716675378465658, guid: c6b337a0baf4e93498ddd31651fd2f4a, type: 3}
       insertIndex: -1
