@@ -897,6 +897,8 @@ MonoBehaviour:
   gameOverText: {fileID: 1962989611}
   gameOverMessage: FIN
   playerCapsule: {fileID: 573287312}
+  winPanel: {fileID: 0}
+  abandonPanel: {fileID: 0}
 --- !u!4 &1661728955
 Transform:
   m_ObjectHideFlags: 0
