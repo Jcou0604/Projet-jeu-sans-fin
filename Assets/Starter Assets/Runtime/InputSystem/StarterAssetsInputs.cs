@@ -2,7 +2,6 @@ using UnityEngine;
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
 #endif
-
 namespace StarterAssets
 {
     public class StarterAssetsInputs : MonoBehaviour
@@ -67,12 +66,21 @@ namespace StarterAssets
 
         private void OnApplicationFocus(bool hasFocus)
         {
-            // Do nothing — cursor is managed by PlayerInteraction
+            SetCursorState(cursorLocked);
         }
 
         private void SetCursorState(bool newState)
         {
-            Cursor.lockState = newState ? CursorLockMode.Locked : CursorLockMode.None;
+            if (!newState)
+            {
+                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.None;
+            }
+            else
+            {
+                Cursor.visible = false;
+                Cursor.lockState = CursorLockMode.Locked;
+            }
         }
     }
 }

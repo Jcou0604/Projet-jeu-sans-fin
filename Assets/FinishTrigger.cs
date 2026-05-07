@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class FinishLine : MonoBehaviour
+public class FinishTrigger : MonoBehaviour
 {
     public CountdownTimer countdownTimer;
 
