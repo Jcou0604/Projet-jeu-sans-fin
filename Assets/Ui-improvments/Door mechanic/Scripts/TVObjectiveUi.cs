@@ -17,9 +17,9 @@ public class TVObjectiveUI : MonoBehaviour
 
     private string[] pages = new string[]
     {
-        "OBJECTIFS\n\n□  Trouve le journal de ton père.\n\n□  Lis le journal pour trouver le code du coffre.\n\n□  Ouvre le coffre et récupère la clé.\n\n□  Utilise la clé pour ouvrir la porte et t'échapper.\n\n\nTu n'as pas beaucoup de temps.\nBonne chance.",
+        "OBJECTIFS\n\n□  Trouve le journal de ton père.\n\n□  Lis le journal pour trouver le code des coffres.\n\n□  Ouvre les coffres et récupère les clés.\n\n□  Utilise les clés pour ouvrir les portes et t'échapper.\n\n\nTu n'as pas beaucoup de temps.\nBonne chance.",
 
-        "COMMANDES\n\n[W A S D]  —  Se déplacer\n\n[Souris]   —  Regarder autour\n\n[E]  —  Interagir / Ramasser un objet\n\n[Tab]  —  Ouvrir l'inventaire\n           (clique sur un objet pour l'utiliser)\n\n[Échap]  —  Fermer un panneau"
+        "COMMANDES\n\n[W A S D]  —  Se déplacer\n\n[Souris]  —  Regarder autour\n\n[E]  —  Interagir / Ramasser\n\n[Tab]  —  Ouvrir l'inventaire\n\n[Échap]  —  Fermer un panneau\n\n[Lire le journal]  —  Tab > clique sur\nle journal dans l'inventaire"
     };
 
     void Awake()
